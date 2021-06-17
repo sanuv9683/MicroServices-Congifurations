@@ -10,7 +10,7 @@ spring:
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=/customers/**
+            - Path=/customer/**
           filters:
             - StripPrefix=1
         - id: item-service
