@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: discovery-server
+
+server:
+  port: 8761
+
+#this is for eureka server
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+#this is for actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
